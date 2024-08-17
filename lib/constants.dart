@@ -1,3 +1,4 @@
+import 'package:animation/basics/animated_container.dart';
 import 'package:animation/basics/page_route_builder.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -38,6 +39,11 @@ class Demo {
 }
 
 final basicDemos = [
+  Demo(
+    name: 'AnimatedContainer',
+    route: AnimatedContainerDemo.routeName,
+    builder: (_) => const AnimatedContainerDemo(),
+  ),
   Demo(
     name: 'PageRouteBuilder',
     route: PageRouteBuilderDemo.routeName,
